@@ -13,7 +13,7 @@ body{
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -31,7 +31,10 @@ body{
 .container{
   display: flex;
   flex-flow: column;
-  flex-wrap: wrap;
+  width: inherit;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 .personnel{
   display: flex;
@@ -45,118 +48,113 @@ body{
   display: flex;
   flex-flow: row;
   background-color: var(--search-color);
-  width: 83%;
-  height: 50px;
-  margin-left: 20px;
-  border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 25px;
-  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  width: 89%;
+  height: 40px;
+  margin-left: 3.5%;
+  border-radius: 2px;
+  padding-left: 3%;
+  padding-top: 2%;
+  margin-top: 4%;
 }
 .menu{
-  margin-top: 11px;
-  margin-right: 20px;
+  justify-self: center;
+}
+.input-search {
+  width: 70%;
 }
 .container-search input{
   border: none;
-  font-size: 19px;
+  font-size: 120%;
   background: none;
   justify-self: center;
-  margin-top: 10;
-  padding-bottom: 7px;
-  padding-top: 12px;
   outline: none;
-  margin-right: 20px;
 }
-.search-icon{
-  margin-top: 11px;
-}
+
 .haris-picture{   
   border-radius: 50%;
   width: 100px;
   height: 100px;
-}
-.thick_vertical-icon{
-  margin-top: 11px;
+  justify-content: flex-start;
 }
 .close-icon{
-  margin-top: 4px;
+  margin-top: -1%;
+  justify-self: flex-end;
 }
 .profil{
-  margin-top: 120px;
-  margin-left: 20px;
+  margin-top: 35%;
+  margin-left: 5%;
 }
 .image-background{
   background-image: url(../img/ordi.jpg);
   background-repeat: no-repeat;
   border-radius: 5px;
   background-size: cover;
+  width: 100%;
 }
 
 .profil-name{
-  margin-top: -100px;
-  margin-left: 120px;
+  margin-top: -24%;
+  margin-left: 30%;
   height: 120px;
   color: var(--white-color);
-  font-size: 12px;
+  font-size: 70%;
 }
 .btn{
   background: var(--red-color);
   color: var(--white-color); /*Couleur du text*/
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: 28px ;
+  width: 75px;
+  height: 75px;
+  justify-content: flex-end;
+  font-size: 40px;
+  font-style: normal;
   border: none;
-  margin-left: 350px;
-  margin-top: -320px;
+  margin-left: 75%;
+  margin-top: -35%;
   cursor: pointer;
 }
 .personal-info{
   margin-top: -10px;
-  height: 580px;
   background-color: var(--primary-color);
-  padding-top: 0px;
 }
 .birthday-icon{
   width: 50px;
   height: 50px;
-  margin-top: -100px;
-  margin-bottom: 50px;
+  margin-top: -100%;
+  margin-bottom: 10%;
 }
 .birth{
   color: var(--white-color); /*Couleur du text*/
-  margin-left: 40px;
+  margin-left: 9%;
+  font-size: 100%;
 }
 .divider{
   background-color: var(--background-color); 
-  margin-left: 75px;
-  width: 230px;
+  opacity: 50%;
+  margin-left: 18%;
+  width: 75%;
   height: 1px;
 }
 .location-icon{
   width: 50px;
   height: 50px;
-  margin-top: -90px;
-  margin-bottom: 37px;
+  margin-top: -90%;
+  margin-bottom: 10%;
 
 }
 .phone-icon{
   width: 50px;
   height: 50px;
-  margin-top: -90px;
-  margin-bottom: 37px;
-  margin-left: -30px;  
+  margin-top: -90%;
+  margin-bottom: 10%;
+  margin-left: -9%;  
 }
 .message-icon{
   width: 50px;
   height: 50px;
-  margin-top: -90px;
-  margin-bottom: 37px;
-  margin-left: -30px; 
+  margin-top: -90%;
+  margin-bottom: 10%;
+  margin-left: -9%;
 }
 .competence{
   display: flex;
@@ -169,6 +167,7 @@ body{
   justify-content: space-between;
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
   padding-top: 20px;
+  padding-bottom: 2.2%;
 }
 .navigation-projet{
   display: flex;
@@ -185,48 +184,54 @@ body{
 .competence input{
   width: 25px;
   height: 25px;
-  margin-left: 25px;
+  margin-left: 4%;
 } 
 .competence img{
   margin-left: 350px;
 }
 .competence h1{
   font-size: 20px;
-  margin-left: 70px;
-  margin-top: -30px;
+  margin-left: 16%;
+  margin-top: -6%;
 }
 .competence p{
-  margin-left: 70px;
+  margin-left: 16%;
 }
 
 .jauges{
-  width: 350px;
-  height: 10px;
-  margin-left: 70px;
+  width: 80%;
+  margin-left: 16%;
   background: none;
-  margin-bottom: 20px;
+  margin-bottom: 4%;
 }
 .m1{
-  width: 250px;
+  width: 75%;
   height: 4px;
   background-color: var(--primary-color);
-  margin-bottom: 20px;
+  margin-bottom: 6%;
 }
 .m2{
   width: 15px;
   height: 15px;
   border-radius: 190%;
   background-color: var(--primary-color);
-  margin-bottom: 100px;
-  margin-top: -30px;
-  margin-left: 250px;
+  margin-top: -8.7%;
+  margin-left: 71.6%;
 }
 .m3{
-  width: 60px;
+  width: 20%;
   height: 4px;
   background-color: rgb(206, 206, 206);
-  margin-left: 265px;
-  margin-top: -110px;
+  margin-left: 76%;
+  margin-top: -2.7%;
+}
+.right-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 63%;
+  margin-left: 37%;
+  margin-top: -116%;
 }
 .experience{
   display: flex;
@@ -235,9 +240,10 @@ body{
   background-color: var(--white-color);
   padding: 0;
   margin: 0;
-  width: 63%;
-  margin-top: -1566px;
-  margin-left: 490px;
+  width: 100%;
+  height: 675px;
+  /*margin-top: -1566px;*/
+  /*margin-left: 490px;*/
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width:1195px) {
@@ -310,48 +316,51 @@ body{
   .header-cursus-mobile{
     max-width: 470px;
   }*/
+  
   .container{
     display: flex;
     flex-flow: column;
     max-width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
   .personnel{
-    width: 100%;
     order: 1;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .right-column{
+    order: 2;
+    margin-top: 5%;
+    width: 100%;
+    margin: auto;
+   
   }
   .experience{
     width: 100%;
-    margin-top: 5%;
-    margin-left: -0%;
-    order: 2;
   }
   .dimension{
-    max-width: 100%;
-    margin-left: -104%;
-    justify-content: center;
-    order: 3;
+    width: 100%;
+    /*justify-content: space-between;*/
   }
   .interet{
-    width: 50%;
+    max-width: 51%;
   }
   .langue{
+    width: 35%;
+  }
+  .cursus-academique{
     width: 100%;
-    margin-left: -40%;
-  }
-  .dim-lang{
-    margin-left: -109%;
-  }
-  .dim{
-    width: 160%;
-    margin-left: -104%;
-    order: 4;
   }
   .competence{
+    order: 3;
     width: 100%;
-    margin-top: 5%;
-    order: 5;
+    margin-top: 3%;
   }
 }
+
 
 
 
@@ -366,71 +375,88 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   flex-direction: row;
+  height: 80px;
   width: 100%;
-  height: 90px;
 }
 .title-experience{
   color: var(--white-color);
-  margin-left: 90px;
 }
 .head-title{
-  font-size: 20px;
+  font-size: 150%;
+  margin-left: 12%;
+  margin-top: -7%;
 }
+.sub-title{
+  margin-left: 12%; 
+}
+
 .company-icon{
-  margin-top: -220px;
-  margin-bottom: 40px;
-  margin-left: 20px;
+  margin-top: 2%;
+  margin-left: 3%;
   width: 50px;
   height: 50px;
 }
 .menu_pointiller-icon-experience{
-  margin-left: 730px;
-  margin-top: -220px;
-  margin-bottom: 50px;
+  margin-left: 95%;
+  margin-top: -7%;
+  margin-bottom: 8%;
 }
 .experience p{
-  margin-left: 30px;
+  margin-left: 4%;
 }
 .sub-title-blue {
   color: var(--primary-color);
 }
 .divider-black{
   background-color: var(--black-color); 
-  margin-left: 30px;
-  width: 780px;
+  margin-left: 4%;
+  opacity: 20%;
+  width: 95%;
   height: 1px;
 }
 .dimension{
-  width: 63%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
 }
 .interet{
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
-  width: 64%;
-  margin-left: 490px;
-  margin-top: 25px;
-  height: 150px;
-  padding-left: 10px;
+  width: max-content;
+  flex-grow: 3;
+  margin-right: 3%;
+  /*margin-left: 490px;*/
+  /*margin-top: 25px;*/
+  height: 230px;
+  padding-left: 3%;
   border-radius: 5px;
-  padding-top: 1px;
+}
+.head-title-interet{
+  font-size: 140%;
+}
+.head-title-langue{
+  font-size: 140%;
 }
 .interet img{
-  width: 90%;
-  height: 40%;
+  width: 95%;
+  height: 50%;
 }
 .langue{
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
-  margin-left: 1060px;
-  width: 31%;
+ /* margin-left: 1060px;*/
+  width: max-content;
+  flex-grow: 2;
   border-radius: 5px;
-  padding-left: 10px;
-  padding-top: 1px;
-  margin-top: -150px;
+  padding-left: 3%;
+  /*margin-top: -150px;*/
 }
+
 .langue input{
   width: 25px;
   height: 25px;
+  margin-top: 4%;
 }
 .langue p{
   margin-left: 50px;
@@ -443,10 +469,12 @@ body{
   background-color: var(--white-color);
   padding: 0;
   margin: 0;
-  width: 63%;
-  margin-top: 20px;
+  width: 100%;
+  height: 590px;
+  margin-top: 3%;
+  /*margin-top: 20px;*/
   /*height: 740px;*/
-  margin-left: 490px;
+  /*margin-left: 490px;*/
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 .header-cursus{
@@ -455,26 +483,32 @@ body{
   border-top-right-radius: 5px;
   flex-direction: row;
   width: 100%;
-  height: 90px;
+  height: 80px;
+}
+.head-title-cursus{
+  font-size: 140%;
+  margin-left: 12%;
+  margin-top: -7%;
+}
+.sub-title-cursus{
+  margin-left: 12%;
 }
 .title-cursus{
   color: var(--white-color);
-  margin-left: 90px;
 }
 .student-icon{
-  margin-top: -220px;
-  margin-bottom: 40px;
-  margin-left: 20px;
   width: 50px;
   height: 50px;
+  margin-top: 2%;
+  margin-left: 2%;
 }
 .menu_pointiller-icon-cursus{
-  margin-left: 730px;
-  margin-top: -220px;
-  margin-bottom: 50px;
+  margin-left: 95%;
+  margin-top: -7%;
+  margin-bottom: 8%;
 }
 .cursus-academique p{
-  margin-left: 30px;
+  margin-left: 4%;
 }
 .scroll i{
   color: var(--black-color);
