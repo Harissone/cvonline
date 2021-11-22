@@ -1,3 +1,4 @@
+@import "../bootstrap/css/bootstrap-utilities.css";
 :root {
     --background-color: #F0F0F0;
     --primary-color: #015F9F;
@@ -31,7 +32,7 @@ body{
 .container{
   display: flex;
   flex-flow: column;
-  width: inherit;
+  width: 100%;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -368,7 +369,20 @@ body{
 
 .scroll{
   overflow-y: scroll;
+  margin-right: 10px;
   overflow-x: hidden;
+}
+.scroll::-webkit-scrollbar-track{
+  border-radius: 10px;
+  border-left: 5px solid var(--background-color);
+  border-right: 5px solid var(--background-color);
+}
+.scroll::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: gray;
+}
+.scroll::-webkit-scrollbar{
+  width: 6px;
 }
 .header-experience{
   background-color: var(--primary-color);
