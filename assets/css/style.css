@@ -175,7 +175,7 @@ body{
   justify-content: space-between;
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
   padding-top: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 95px;
 }
 .slide-rouge{
   background-color: var(--red-color);
@@ -254,7 +254,7 @@ body{
   justify-content: space-between;
   width: 63%;
   margin-left: 37%;
-  margin-top: -1565px;
+  margin-top: -1629px;
 }
 .experience{
   display: flex;
@@ -265,65 +265,11 @@ body{
   margin: 0;
   width: 100%;
   height: 675px;
-  /*margin-top: -1566px;*/
-  /*margin-left: 490px;*/
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
 
-@media screen and (max-width:1110px) {
-  /*.container{
-    padding-left: 20px;
-    padding-right: -30px;
-    justify-content: center;
-  }
-  .competence{
-    margin-top: 1700px;
-  }
-  .experience{
-    margin-top: -2340px;
-    margin-left: 0px;
-    width: 470px;
-  }
-  .header-experience{
-    width: 470px;
-  }
-  .dimension{
-    margin-left: -490px;
-  }
-
-  .interet{
-    max-width: 240px;
-  }
-  .ret{
-    margin-left: -310px;
-  }
-  .langue{
-    max-width: 200px;
-  }
-  .dim{
-    margin-left: -490px;
-  }
-  .header-experience-mobile{
-    max-width: auto;
-  }
-  .cursus-academique{
-    max-width: 100%;
-    margin-top: 20px;
-    margin-left: -0px;
-  }
-  .header-cursus{
-    background-color: var(--primary-color);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    flex-direction: row;
-    width: 470px;
-    height: 90px;
-  }
-  .header-cursus-mobile{
-    max-width: 470px;
-  }*/
-  
+@media screen and (max-width:768px) {
   .container{
     display: flex;
     flex-flow: column;
@@ -379,6 +325,18 @@ body{
     width: 100%;
     margin-top: 3%;
   }
+  .menu_pointiller-icon-experience{
+    visibility: hidden;
+  }
+  .menu_pointiller-icon-cursus{
+    visibility: hidden;
+  }
+  .star-icon{
+    margin-right: 5%;
+  }
+  .container-search input{
+    font-size: 100%;   
+  }
   
 }
 
@@ -414,12 +372,18 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 80px;
   width: 100%;
 }
 .title-experience{
   color: var(--white-color);
-  margin-left: -20px;
+  margin-left: 85px;
+  margin-top: -70px;
+}
+.head-title-experience{
+  font-size: 140%;
 }
 
 .company-icon{
@@ -504,12 +468,8 @@ body{
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 590px;
+  height: 675px;
   margin-top: 3%;
-  padding-bottom: 12px;
-  /*margin-top: 20px;*/
-  /*height: 740px;*/
-  /*margin-left: 490px;*/
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 .header-cursus{
@@ -517,29 +477,31 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 80px;
 }
 .head-title-cursus{
   font-size: 140%;
-  margin-left: 12%;
-  margin-top: -7%;
 }
-.sub-title-cursus{
-  margin-left: 12%;
-}
+
 .title-cursus{
   color: var(--white-color);
+  margin-left: 85px;
+  margin-top: -70px;
 }
 .student-icon{
+  margin-top: 2%;
+  margin-left: 3%;
   width: 50px;
   height: 50px;
-  margin-top: 2%;
-  margin-left: 2%;
 }
 .menu_pointiller-icon-cursus{
   margin-left: 95%;
   margin-top: -7%;
+  position: relative;
+  justify-content: flex-end;
   margin-bottom: 8%;
 }
 .cursus-academique p{
