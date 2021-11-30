@@ -6,11 +6,20 @@
     $lien_chef_tech = "http://mdem.cm";
     $job_chef_tech = "Chef du projet annuaire-universel.cm de l'ART;";
 
+    $ets_m_debut = new DateTime("2019-07-00");
+    $ets_m_chikdev_fin = new DateTime(Date('Y-m-d'));
+    $ets_m_exp = $ets_m_chikdev_fin->diff($ets_m_debut)->format("%y");
+
     $fon_DT = "Fondateur & DT";
     $startup_chikdev = "@Startup ChickDev";
     $date_fon_DT = "De juin 2015 à ce jour";
     $lien_chikdev = "http://chickdev.com";
     $job_chikdev = "Réalisation de plusieurs site web et applications web et mobiles";
+
+    $startup_chikdev_debut = new DateTime("2015-06-00");
+    $startup_chikdev_fin = new DateTime(Date('Y-m-d'));
+    $startup_chikdev_exp = $startup_chikdev_fin->diff($startup_chikdev_debut)->format("%y");
+
 
 
     $enseignant = "Enseignant";
@@ -20,6 +29,10 @@
     $cour_enseigner = " \"Analyse. UML & MERISE\";\"BD/SQL. ORACLE & MySQL\";\"Dév. IOS &
     Android\";\"BI & Data Talend DI & Hadoop\". 1<sup>ère</sup>, 2<sup>ème</sup> et 4<sup>ème</sup> année";
 
+    $enseignant_debut = new DateTime("2011-10-00");
+    $enseignant_fin = new DateTime(Date('Y-m-d'));
+    $enseignant_exp = $enseignant_fin->diff($enseignant_debut)->format("%y");
+
 
     $dev_chef = "Développeur en chef";
     $Kayroual_group = "@Kayroual group";
@@ -27,16 +40,28 @@
     $lien_khayroual = "http://khayroual.com";
     $job_dev_chef = "Réalisation de multiples projets logiciels et web, Infographie, ...";
 
+    $kayroual_debut = new DateTime("2013-05-00");
+    $kayroul_fin = new DateTime("2015-06-00");
+    $kayroul_exp = $kayroul_fin->diff($kayroual_debut)->format("%y");
+
+
 
     $resp_commer = "Responsable commercial";
     $bao_sarl = "@BAO Sarl";
     $date_resp_commer = "De Décembre 2012 à Juin 2013";
     $lien_bao_sarl = "http://bao-sarl";
 
+    $resp_com_debut = new DateTime("2012-12-00");
+    $resp_com_fin = new DateTime("2013-06-00");
+    $resp_com_exp = $resp_com_fin->diff($resp_com_debut)->format("%y");
+
+    $exp = $enseignant_exp;
+
+
    echo ' <div class="header-experience header-experience-mobile"> 
         <img src="assets/img/company.png" class="company-icon" />               
         <div class="title-experience title-experience-mobile">                                  
-            <h1 class="head-title-experience head-title-mobile">Expérience proféssionnelle</h1>
+            <h1 class="head-title-experience head-title-mobile">Expérience proféssionnelle ('.$exp.' ans d\'expériences)</h1>
             <label class="sub-title sub-title-mobile"><i>Expertise en entreprise</i></label>                   
         </div>
         
@@ -72,7 +97,7 @@
     <p class="sub-title-blue sub-title-blue-mobile">'.$date_chef_tech.' - '.$lien_chef_tech.' </p>
     <p class="sub-title sub-title-mobile">'.$job_chef_tech.'</p>
     </div>
- <!-- Fin Div experiences personnelles-->
+    <!-- Fin Div experiences personnelles-->
 
     ';     
  ?>
