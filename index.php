@@ -18,31 +18,31 @@
     <div class="container container-mobile">     
         <div class="personnel personnel-mobile">
             <?php 
-                include("personnelle.php");
+                include("vues/personnelle.php");
             ?>
         </div>
         <div class="competence competence-mobile">
             <?php 
-                include("competence.php");
+                include("vues/competence.php");
             ?>
         </div>
 
         <div class="right-column">
             <div class="experience experience-mobile">
                 <?php 
-                    include("experience.php");
+                    include("vues/experience.php");
                 ?>
             </div>
 
             <div class="dimension">
                 <?php
-                    include("inter-lang.php");
+                    include("vues/inter-lang.php");
                 ?>
             </div> 
 
             <div class="cursus-academique cursus-academique-mobile">
                 <?php
-                    include("cursus.php");
+                    include("vues/cursus.php");
                 ?>
             </div>          
         </div>

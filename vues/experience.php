@@ -53,13 +53,13 @@
 
 
    echo ' <div class="header-experience header-experience-mobile"> 
-        <img src="assets/img/company.png" class="company-icon" />               
+        <img src="../assets/img/company.png" class="company-icon" />               
         <div class="title-experience title-experience-mobile">                                  
             <h1 class="head-title-experience head-title-mobile">Expérience proféssionnelle ('.$exp.' ans d\'expériences)</h1>
             <label class="sub-title sub-title-mobile"><i>Expertise en entreprise</i></label>                   
         </div>
         
-        <img src="assets/img/menu_pointiller.png" class="menu_pointiller-icon-experience" />
+        <img src="../assets/img/menu_pointiller.png" class="menu_pointiller-icon-experience" />
     </div>
     <div class="scroll">
     <p class="sub-title sub-title-mobile">'.$chef_projet_tech[0].' - <b>'.$chef_projet_tech[1].'</b></p>

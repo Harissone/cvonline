@@ -1,15 +1,15 @@
 <?php 
     $barre_recherche = [
-        "assets/img/menu.png",
+        "../assets/img/menu.png",
         "Besoin d'un chef de projet ? ",
-        "assets/img/search.png",
-        "assets/img/thick_vertical.png",
-        "assets/img/close.png" 
+        "../assets/img/search.png",
+        "../assets/img/thick_vertical.png",
+        "../assets/img/close.png" 
     ];
 
     //Profil
     $profil = [
-        "assets/img/haris.jpg",
+        "../assets/img/haris.jpg",
         "Junior Essono",
         "Architecte logiciel / DevOps"
     ];  
@@ -95,7 +95,7 @@
                 <p class="birth birth-mobile">'.$birth[1].'</p>
                 <p class="birth birth-mobile">'.$birth[2].'</p>
             </div>            
-            <img src="assets/img/birthday.png" class="birthday-icon birthday-icon-mobile" />
+            <img src="../assets/img/birthday.png" class="birthday-icon birthday-icon-mobile" />
         </div>
         <div class="divider divider-mobile"></div>
         <div class="residence residence-mobile">
@@ -104,7 +104,7 @@
                 <p class="birth birth-mobile">'.$residence[1].'</p>
                 <p class="birth birth-mobile">'.$residence[2].'</p>
             </div> 
-                <img src="assets/img/location.png" class="location-icon" />
+                <img src="../assets/img/location.png" class="location-icon" />
         </div>
         <div class="divider divider-mobile"></div>
         <div class="birth phone-mobile">
@@ -112,7 +112,7 @@
             <p class="birth birth-mobile">'.$contact[0].'</p>
             <p class="birth media-mobile">'.$contact[1].'</p>
             </div>    
-                <img src="assets/img/phone.png" class="phone-icon" />
+                <img src="../assets/img/phone.png" class="phone-icon" />
         </div>
         <div class="divider divider-mobile"></div>
         <div class="birth mail-mobile">
@@ -120,7 +120,7 @@
             <p class="birth birth-mobile">'.$mail[0].'</p>
             <p class="birth birth-mobile">'.$mail[1].'</p>
             </div>
-                <img src="assets/img/message.png" class="message-icon" />
+                <img src="../assets/img/message.png" class="message-icon" />
         </div>
         
         <div class="navigation-projet">

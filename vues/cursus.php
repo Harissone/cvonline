@@ -48,12 +48,12 @@
     ];
 
   echo '  <div class="header-cursus header-cursus-mobile">
-        <img src="assets/img/student.png" class="student-icon" />
+        <img src="../assets/img/student.png" class="student-icon" />
         <div class="title-cursus title-cursus-mobile">
             <h1 class="head-title-cursus head-title-mobile">Cursus academique</h1>
             <label class="sub-title-cursus sub-title-mobile"><i>Diplome et formation certifiantes</i></label>
         </div> 
-        <img src="assets/img/menu_pointiller.png" class="menu_pointiller-icon-cursus" />
+        <img src="../assets/img/menu_pointiller.png" class="menu_pointiller-icon-cursus" />
     </div>
     <div class="scroll">
     <p class="sub-title sub-title-mobile">'.$dipet_electro[0].' - <b>'.$dipet_electro[1].'</b></p>

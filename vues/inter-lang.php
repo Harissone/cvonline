@@ -1,7 +1,7 @@
 <!-- Debut Div interet et langue-->
 <?php 
     $inter_lang = [
-        "assets/img/interet.png",
+        "../assets/img/interet.png",
         "Français",
         "Anglais"
     ];
