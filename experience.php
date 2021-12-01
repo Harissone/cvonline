@@ -8,10 +8,7 @@
         "Chef du projet annuaire-universel.cm de l'ART;"
     ];
    
-    $ets_m_debut = new DateTime("2019-07-00");
-    $ets_m_chikdev_fin = new DateTime(Date('Y-m-d'));
-    $ets_m_exp = $ets_m_chikdev_fin->diff($ets_m_debut)->format("%y");
-
+  
     $fon_DT = [
         "Fondateur & DT",
         "@Startup ChickDev",
@@ -20,11 +17,7 @@
         "Réalisation de plusieurs site web et applications web et mobiles"
     ];
 
-    $startup_chikdev_debut = new DateTime("2015-06-00");
-    $startup_chikdev_fin = new DateTime(Date('Y-m-d'));
-    $startup_chikdev_exp = $startup_chikdev_fin->diff($startup_chikdev_debut)->format("%y");
-
-
+  
     $enseignant = [
         "Enseignant",
         "@Institut Universitaire de la cote",
@@ -47,11 +40,7 @@
         "Réalisation de multiples projets logiciels et web, Infographie, ..."
     ];
 
-    $kayroual_debut = new DateTime("2013-05-00");
-    $kayroul_fin = new DateTime("2015-06-00");
-    $kayroul_exp = $kayroul_fin->diff($kayroual_debut)->format("%y");
-
-
+   
     $resp_commer = [
         "Responsable commercial",
         "@BAO Sarl",
@@ -59,10 +48,7 @@
         "http://bao-sarl"
     ];
 
-    $resp_com_debut = new DateTime("2012-12-00");
-    $resp_com_fin = new DateTime("2013-06-00");
-    $resp_com_exp = $resp_com_fin->diff($resp_com_debut)->format("%y");
-
+   
     $exp = $enseignant_exp;
 
 
