@@ -1,38 +1,51 @@
 <!-- Debut Div cursus academique-->   
 <?php 
-    $dipet_electro = "DIPET 2 Electronique";
-    $enset_douala = "@ENSET de douala";
-    $date_dipet_electro = "Aout 2016";
-    $role_dipet = "Gestion d'éclairage d'une maison (Android + Arduino)";
-
-
-    $oracle_certif = "Oracle Certified Associate";
-    $kentix_sarl = "@Kentix Sarl";
-    $date_oracle_certif = "Mars 2009";
-    $obj_oracle_certif = "Oracle Database 11g Administration";
-
-
-    $oracle_sql_certif = "Oracle SQL Certified";
-    $date_oracle_sql_certif = "Décembre 2008";
-    $list_oracle_sql_certif = "SQL 2, SQL3, XML";
-
-
-    $licence_pro = "Licence professionnelle";
-    $douala_inst_tech = "@Douala Institute of Tech.";
-    $date_licence_pro = "Octobre 2008";
-    $telecom_reseau = "Télécommunication & Réseaux";
-
-
-    $dec_bts = "DEC / BTS";
-    $ccnb_canada = "@CCNB Dieppe - Canada";
-    $date_dec_bts = "Septembre 2007";
-    $prog_app = "Programmation Appliqué Pour Internet";
-
-
-    $bacc = "Baccalauréat ";
-    $lycee_tech = "@Lycée Technique de Douala Bassa";
-    $date_bacc = "Juin 2005 ";
-    $mention_electro = "Electrotechnique, mention BIEN";
+    //bloc Dipet electro
+    $dipet_electro = [
+        "DIPET 2 Electronique",
+        "@ENSET de douala",
+        "Aout 2016",
+        "Gestion d'éclairage d'une maison (Android + Arduino)"
+    ];
+   
+    //bloc de la certification oracle
+    $oracle_certif = [
+        "Oracle Certified Associate",
+        "@Kentix Sarl",
+        "Mars 2009",
+        "Oracle Database 11g Administration"
+    ];
+    
+    //bloc certification SQL oracle
+    $oracle_sql_certif = [
+        "Oracle SQL Certified",
+        "Décembre 2008",
+        "SQL 2, SQL3, XML"
+    ];
+   
+    //bloc licence pro
+    $licence_pro = [
+        "Licence professionnelle",
+        "@Douala Institute of Tech.",
+        "Octobre 2008",
+        "Télécommunication & Réseaux"
+    ];
+    
+    //bloc DEC-BTS
+    $dec_bts = [
+        "DEC / BTS",
+        "@CCNB Dieppe - Canada",
+        "Septembre 2007",
+        "Programmation Appliqué Pour Internet"
+    ];
+   
+    //Bloc Baccalaureat
+    $bacc = [
+        "Baccalauréat ",
+        "@Lycée Technique de Douala Bassa",
+        "Juin 2005 ",
+        "Electrotechnique, mention BIEN"
+    ];
 
   echo '  <div class="header-cursus header-cursus-mobile">
         <img src="assets/img/student.png" class="student-icon" />
@@ -43,36 +56,36 @@
         <img src="assets/img/menu_pointiller.png" class="menu_pointiller-icon-cursus" />
     </div>
     <div class="scroll">
-    <p class="sub-title sub-title-mobile">'.$dipet_electro.' - <b>'.$enset_douala.'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_dipet_electro.' - <i>'.$role_dipet.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$dipet_electro[0].' - <b>'.$dipet_electro[1].'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$dipet_electro[2].' - <i>'.$dipet_electro[3].'</i></p>
     <div class="divider-black divider-black-mobile"></div>
 
-    <p class="sub-title sub-title-mobile">'.$oracle_certif .' - <b>'.$kentix_sarl .'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_oracle_certif.' - <i>'.$obj_oracle_certif.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$oracle_certif[0].' - <b>'.$oracle_certif[1] .'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$oracle_certif[2].' - <i>'.$oracle_certif[3].'</i></p>
     <div class="divider-black divider-black-mobile"></div>
 
-    <p class="sub-title sub-title-mobile">'.$oracle_sql_certif.' - <b>'.$kentix_sarl .'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_oracle_sql_certif.' - <i>'.$list_oracle_sql_certif.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$oracle_sql_certif[0].' - <b>'.$oracle_certif[1] .'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$oracle_sql_certif[1].' - <i>'.$oracle_sql_certif[2].'</i></p>
     <div class="divider-black divider-black-mobile"></div>
 
-    <p class="sub-title sub-title-mobile">'.$licence_pro.' - <b>'.$douala_inst_tech.'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_licence_pro.'- <i>'.$telecom_reseau.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$licence_pro[0].' - <b>'.$licence_pro[1].'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$licence_pro[2].'- <i>'.$licence_pro[3].'</i></p>
     <div class="divider-black divider-black-mobile"></div>
 
-    <p class="sub-title sub-title-mobile">'.$dec_bts.' - <b>'.$ccnb_canada.'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_dec_bts.' - <i>'.$prog_app.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$dec_bts[0].' - <b>'.$dec_bts[1].'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$dec_bts[2].' - <i>'.$dec_bts[3].'</i></p>
     <div class="divider-black divider-black-mobile"></div>
 
-    <p class="sub-title sub-title-mobile">'.$bacc.' - <b>'.$lycee_tech.'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_bacc.' - <i>'.$mention_electro.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$bacc[0].' - <b>'.$bacc[1].'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$bacc[2].' - <i>'.$bacc[3].'</i></p>
     <div class="divider-black divider-black-mobile"></div>
 
-    <p class="sub-title sub-title-mobile">'.$oracle_certif .' - <b>'.$kentix_sarl .'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_oracle_certif.' - <i>'.$obj_oracle_certif.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$oracle_certif[0].' - <b>'.$oracle_certif[1] .'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$oracle_certif[2].' - <i>'.$oracle_certif[3].'</i></p>
     <div class="divider-black divider-black-mobile"></div>
 
-    <p class="sub-title sub-title-mobile">'.$bacc.' - <b>'.$lycee_tech.'</b></p>
-    <p class="sub-title-blue sub-title-blue-mobile">'.$date_bacc.' - <i>'.$mention_electro.'</i></p>
+    <p class="sub-title sub-title-mobile">'.$bacc[0].' - <b>'.$bacc[1].'</b></p>
+    <p class="sub-title-blue sub-title-blue-mobile">'.$bacc[2].' - <i>'.$bacc[3].'</i></p>
     </div>
 <!-- Fin Div cursus academique-->
 
