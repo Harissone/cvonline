@@ -1,118 +1,103 @@
 <!-- Debut des competences-->
 <?php 
-    $dev_front_end = [
-        "Développement front-end",
-        "HTML5, SASS, VueJS, Angular, JavaFX, ..."
+
+    class Competences
+    {
+        public function __construct(protected $groupeCompetences, protected $subCompetences, 
+        protected $m1, protected $m2){
+
+        }
+       
+        function getM1(){
+            return $this->m1;
+        }
+        function getM2(){
+            return $this->m2;
+        }
+        function set_groupeCompetence($groupeCompetences){
+            $this->groupeCompetences = $groupeCompetences;
+        }
+        function get_groupeCompetence(){
+            return $this->groupeCompetences;
+        }
+
+        function set_subCompetence($subCompetences){
+            $this->subCompetences = $subCompetences;
+        }
+        function get_subCompetences(){
+            return $this->subCompetences;
+        }
+
+        public function addGroupeCompetences(){
+
+        }
+        public function updateGroupeCompetences($id){
+
+        }
+        public function deleteGroupeCompetences($id){
+
+        }
+        public function deleteAllGroupeCompetences(){
+
+        }
+        public function getGroupeCompetences($id){
+
+        }
+        public function getAllGroupeCompetences(){
+
+        }
+
+        public function addSubCompetences(){
+
+        }
+        public function updateSubCompetences($id){
+
+        }
+        public function deleteSubCompetences($id){
+
+        }
+        public function deleteAllSubCompetences(){
+
+        }
+        public function getSubCompetences($id){
+
+        }
+        public function getAllSubCompetences(){
+
+        }
+        public function getHtmlOfCompetences(){
+
+            echo ' <div class="skills">             
+                    <input type="checkbox" checked="true" class="checkbox checkbox-mobile"/>
+                    <div class="titre">
+                        <div class="head-title-skills head-title-mobile"><b>'.$this->get_groupeCompetence().'</b></div>
+                        <p class="sub-title sub-title-mobile">'.$this->get_subCompetences().'</p>
+                    <div class="jauges">
+                        <div class="m1" style="width: '.$this->getM1().'%;"></div>
+                        <div class="m2" style="right: '.$this->getM2().'%;"></div>
+                    </div>
+                    </div>
+                    <i class="fas fa-star"></i>                 
+                    </div>
+                    
+                    
+                ';
+        }
+    }
+    $comp = [
+        new Competences("Développement front-end", "HTML5, SASS, VueJS, Angular, JavaFX, ...", 80, 20),
+        new Competences("Développement back-end", "NodeJS, Drupal 8, Laravel, kotlin, Java EE7", 62, 35),
+        new Competences("Développement mobile", "Android Kotlin, IOS Swift, Cordova, Flutter", 75, 23),
+        new Competences("UI / UX Design", "Photoshop CC, Adobe XD, Material Design", 56, 44),
+        new Competences("Base de données & Big Data", "Oracle 11g, PostgreSQL, Hadoop, Talend DI",88,12),
+        new Competences("Outils / Environnements", "Visual Paradigm, Git, Docker, K8s, Linux", 80, 12),
+
     ];
-   
-    $dev_back_end = [
-        "Développement back-end",
-        "NodeJS, Drupal 8, Laravel, kotlin, Java EE7"
-    ];
-   
-    $dev_mobile = [
-        "Développement mobile",
-        "Android Kotlin, IOS Swift, Cordova, Flutter"
-    ];
-   
-    $ui_ux = [
-        "UI / UX Design",
-        "Photoshop CC, Adobe XD, Material Design"
-    ];
-   
-    $bd_big_data = [
-        "Base de données & Big Data",
-        "Oracle 11g, PostgreSQL, Hadoop, Talend DI"
-    ];
-   
-    $outil_env = [
-        "Outils / Environnements",
-        "Visual Paradigm, Git, Docker, K8s, Linux"
-    ];
+    
+    foreach($comp as $key){
+        $key->getHtmlOfCompetences();
+    }
    
 
-   echo ' <div class="skills">             
-        <input type="checkbox" checked="true" class="checkbox checkbox-mobile"/>
-        <div class="titre">
-            <div class="head-title-skills head-title-mobile"><b>'.$dev_front_end[0].'</b></div>
-            <p class="sub-title sub-title-mobile">'.$dev_front_end[1].'</p>
-        <div class="jauges">
-            <div class="m1" style="width: 80%;"></div>
-            <div class="m2" style="right: 20%;"></div>
-        </div>
-        </div>
-        <i class="fas fa-star"></i>
-        
-    </div>
-    <div class="skills">
-        <input type="checkbox" checked="true" class="checkbox checkbox-mobile"/>
-        <div class="titre">
-            <div class="head-title-skills head-title-mobile"><b>'.$dev_back_end[0].'</b></div>
-            <p class="sub-title sub-title-mobile">'.$dev_back_end[1].'</p>
-        <div class="jauges">
-            <div class="m1" style="width: 62%;"></div>
-            <div class="m2" style="right: 35%;"></div>
-        </div>
-        </div>
-        
-        <i class="fas fa-star"></i>
-        
-    </div>
-    <div class="skills">    
-        <input type="checkbox" checked="true" class="checkbox checkbox-mobile"/>
-        <div class="titre">
-            <div class="head-title-skills head-title-mobile"><b>'.$dev_mobile[0].'</b></div>
-            <p class="sub-title sub-title-mobile">'.$dev_mobile[1].'</p>
-        <div class="jauges">
-            <div class="m1" style="width: 75%;"></div>
-            <div class="m2" style="right: 23%;"></div>
-        </div>
-        </div>
-        
-        <i class="fas fa-star"></i>
-        
-    </div>
-    
-    <div class="skills">             
-        <input type="checkbox" checked="true" class="checkbox checkbox-mobile"/>
-        <div class="titre">
-            <div class="head-title-skills head-title-mobile"><b>'.$ui_ux[0].'</b></div>
-            <p class="sub-title sub-title-mobile">'.$ui_ux[1].'</p>
-        <div class="jauges">
-            <div class="m1" style="width: 56%;"></div>
-            <div class="m2" style="right: 44%;"></div>
-        </div>
-        </div>
-        
-        <i class="fas fa-star"></i>
-    </div>
-    
-    <div class="skills">             
-        <input type="checkbox" checked="true" class="checkbox checkbox-mobile"/>
-        <div class="titre">
-            <div class="head-title-skills head-title-mobile"><b>'.$bd_big_data[0].'</b></div>
-            <p class="sub-title sub-title-mobile">'.$bd_big_data[1].'</p>
-        <div class="jauges">
-            <div class="m1" style="width: 88%;"></div>
-            <div class="m2" style="right: 12%;"></div>
-        </div>
-        </div>
-        
-        <i class="fas fa-star"></i>
-    </div>
-    
-    <div class="skills">                
-        <input type="checkbox" checked="true" class="checkbox checkbox-mobile"/>
-        <div class="titre">
-            <div class="head-title-skills head-title-mobile"><b>'.$outil_env[0].'</b></div>
-            <p class="sub-title sub-title-mobile">'.$outil_env[1] .'</p>
-        <div class="jauges">
-            <div class="m1" style="width: 80%;"></div>
-            <div class="m2" style="right: 20%;"></div>
-        </div>
-        </div>  
-        <i class="fas fa-star"></i>
-    </div> 
-    
-    ';
+   
 ?>

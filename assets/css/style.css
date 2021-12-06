@@ -121,6 +121,7 @@ body{
   margin-top: -35%;
   cursor: pointer;
 }
+
 .personal-info{
   margin-top: -10px;
   background-color: var(--primary-color);
@@ -270,7 +271,7 @@ body{
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
-
+/*Mobile*/
 @media screen and (max-width:768px) {
   .container{
     display: flex;
@@ -347,10 +348,60 @@ body{
   
 }
 
+/*Send mail*/
 
-
-
-
+.card-body{
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;
+  margin-top: 100px;
+  padding: 20px;
+  width: 35%;
+  background-color: var(--white-color);
+  justify-content: space-between;
+  align-items: inherit;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.card-body p{
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-objet{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.card-body input{
+  border: none;
+  font-size: 13px;
+  background: none;
+  width: 60%;
+  border-radius: 2px;
+  outline: solid;
+  outline-color: var(--background-color);
+}
+.card-body textarea{
+  border: none;
+  font-size: 13px;
+  background: none;
+  width: 60%;
+  border-radius: 2px;
+  outline: solid;
+  outline-color: var(--background-color);
+}
+.btn-send{
+  background: var(--red-color);
+  color: var(--white-color); /*Couleur du text*/
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  justify-self: center;
+  font-size: 13px;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+}
 
 
 
