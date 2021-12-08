@@ -84,19 +84,7 @@
                 ';
         }
     }
-    $comp = [
-        new Competences("Développement front-end", "HTML5, SASS, VueJS, Angular, JavaFX, ...", 80, 20),
-        new Competences("Développement back-end", "NodeJS, Drupal 8, Laravel, kotlin, Java EE7", 62, 35),
-        new Competences("Développement mobile", "Android Kotlin, IOS Swift, Cordova, Flutter", 75, 23),
-        new Competences("UI / UX Design", "Photoshop CC, Adobe XD, Material Design", 56, 44),
-        new Competences("Base de données & Big Data", "Oracle 11g, PostgreSQL, Hadoop, Talend DI",88,12),
-        new Competences("Outils / Environnements", "Visual Paradigm, Git, Docker, K8s, Linux", 80, 12),
-
-    ];
     
-    foreach($comp as $key){
-        $key->getHtmlOfCompetences();
-    }
    
 
    

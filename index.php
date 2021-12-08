@@ -32,27 +32,44 @@
         <div class="competence competence-mobile">
             <?php 
                 include("vues/competence.php");
+                $comp = [
+                    new Competences("Développement front-end", "HTML5, SASS, VueJS, Angular, JavaFX, ...", 80, 20),
+                    new Competences("Développement back-end", "NodeJS, Drupal 8, Laravel, kotlin, Java EE7", 62, 35),
+                    new Competences("Développement mobile", "Android Kotlin, IOS Swift, Cordova, Flutter", 75, 23),
+                    new Competences("UI / UX Design", "Photoshop CC, Adobe XD, Material Design", 56, 44),
+                    new Competences("Base de données & Big Data", "Oracle 11g, PostgreSQL, Hadoop, Talend DI",88,12),
+                    new Competences("Outils / Environnements", "Visual Paradigm, Git, Docker, K8s, Linux", 80, 16),
+            
+                ];
+                
+                foreach($comp as $key){
+                    $key->getHtmlOfCompetences();
+                }
             ?>
         </div>
 
         <div class="right-column">
             <div class="experience experience-mobile">
                 <?php 
-                    include("vues/experience.php");
-                    
-                    $expe = [
+                    include("vues/experience.php");  
+                    $expe = array (
                         new Experiences("Chef des projets technologiques", "@Ets. M DE M", "juillet 2019", "ce jour", "http://mdem.cm", "Chef du projet annuaire-universel.cm de l'ART;"),
                         new Experiences("Fondateur & DT", "@Startup ChickDev", "juin 2015", "ce jour", "http://chickdev.com", "Réalisation de plusieurs site web et applications web et mobiles"),
                         new Experiences("Enseignant", "@Institut Universitaire de la cote", "octobre 2011", "ce jour", "http://istdi.net", " \"Analyse. UML & MERISE\";\"BD/SQL. ORACLE & MySQL\";\"Dév. IOS &
                         Android\";\"BI & Data Talend DI & Hadoop\". 1<sup>ère</sup>, 2<sup>ème</sup> et 4<sup>ème</sup> année"),
                         new Experiences("Développeur en chef", "@Kayroual group", "Mai 2013", "juin 2015", "http://khayroual.com", "Réalisation de multiples projets logiciels et web, Infographie, ..."),
                         new Experiences("Responsable commercial", "@BAO Sarl", "Décembre 2012", "Juin 2013", "http://bao-sarl", "Réalisation de multiples projets logiciels et web, Infographie, ...")
-                    ];
+                    );
                     
+                    Experiences::getHeadHtmlOfExperiences();
+                
+                    echo ' <div class="scroll">';
+                                     
                     foreach ($expe as $key) {
                         $key->getHtmlOfExperiences();
                     }
-                    echo ''.$this->getHeadHtmlOfExperiences().'';
+                
+                    echo '</div>';                               
                 ?>
             </div>
 

@@ -1,10 +1,10 @@
 <?php 
     class Profil{
 
-        public function __construct(protected $photoProfil, public $nomUtilisateur, public $fonctionEntreprise, 
-        public $anneeNaissance, public $origine, public $matrimonial, public $sante, public $residences, public $residenceVille, 
-        public $map, public $numeroTelephone, public $reseauSociaux, public $addresseMail, public $reseauMail, 
-        public $nbreProjet, public $nbreContrat, public $nbreAnneeExperience){
+        public function __construct(protected $photoProfil, protected $nomUtilisateur, protected $fonctionEntreprise, 
+        protected $anneeNaissance, protected $origine, protected $matrimonial, protected $sante, protected $residences, protected $residenceVille, 
+        protected $map, protected $numeroTelephone, protected $reseauSociaux, protected $addresseMail, protected $reseauMail, 
+        protected $nbreProjet, protected $nbreContrat, protected $nbreAnneeExperience){
 
         }
 
@@ -122,52 +122,6 @@
         }
         //Fin fonction pour projet utilisateur
 
-
-        //Profil
-        protected $profil = [
-            "../assets/img/haris.jpg",
-            "Junior Essono",
-            "Architecte logiciel / DevOps"
-        ];  
-
-        //Birth info
-        protected $birth = [
-            "Née le 20 octobre 1986",
-            "Originaire du Sud Cameroun",
-            "Marié, 02 enfants - Santé RAS",      
-        ];
-    
-        //residence info
-        protected $residence = [
-            "Résident à Ndogbong",
-            "Douala - Cameroun",
-            "Map: 4.053276, 9.765047",
-        ];
-    
-        //numero info
-        protected $contact = [
-            "(237) 674 053 983",
-            "Mobile, Télégram, Whatsapp",
-        ];
-    
-        //addresse mail
-        protected $mail = [
-            "junioressono@gmail.com",
-            "Google+, Twitter, Linkedin, Github"
-        ];
-
-
-        //projet-contrats-experience
-        protected $pro_con_exp = [
-            "+45 PROJETS",
-            "+31 CONTRATS",
-            "+12 ANS D'EXP"
-        ];
-        
-        /*public function __construct(array $profil = [] ){
-            $this->profil = $profil;
-        }*/
-
         public function addProfil(){
 
         }
@@ -225,7 +179,11 @@
             <div class="personal-info personal-info-mobile">
                 <!-- Div du boutton Add-->
                 <div class="buttom-add buttom-add-mobile">
-                    <a href="vues/sendmail.php"><button class="btn">+</button></a>
+                    <button class="btn" onclick="toggleClock();" id="btn">+</button>
+                </div>
+                <div class="subButton" id="divButton">
+                    <button class="btn-pdf" id="btn-pdf">+</button>
+                    <a href="vues/sendmail.php"><button class="btn-mail" id="btn-mail">+</button></a>
                 </div>
                 <div class="birthday birthday-mobile">
                     <div class="birth birth-mobile">
@@ -236,7 +194,7 @@
                     <img src="../assets/img/birthday.png" class="birthday-icon birthday-icon-mobile" />
                 </div>
                 <div class="divider divider-mobile"></div>
-                <div class="residence residence-mobile">
+                <div class="birthday residence-mobile">
                     <div class="birth birth-mobile">
                         <p class="birth birth-mobile">'.$this->residences.'</p>
                         <p class="birth birth-mobile">'.$this->residenceVille.'</p>
@@ -273,7 +231,43 @@
             ';
         }   
     }
-   
+
+  echo '
+
+    <script type="text/javascript">
+        function toggleClock() {
+            // get the clock
+            var madiv = document.getElementById(\'divButton\');
+            var settingDisplay = madiv.style.display;
+            //var myButtonPdf = document.getElementById(\'btn-pdf\');
+            //var myButtonMail = document.getElementById(\'btn-mail\');
+            
 
 
+            // get the current value of the clock\'s display property
+            //settingDisplay = madiv.style.display;
+            //var displaySettings = myButtonMail.style.display;
+
+            // also get the clock button, so we can change what it says
+            var clockButton = document.getElementById(\'btn\');
+
+            // now toggle the clock and the button text, depending on current state
+            if (settingDisplay == \'none\') {
+            // clock is visible. hide it
+            madiv.style.display = \'block\';
+            // change button text
+            clockButton.innerHTML = \'x\';
+            }
+            else {
+            // clock is hidden. show it
+            madiv.style.display = \'none\';
+            // change button text
+            clockButton.innerHTML = \'+\';
+            }   
+            
+            
+        }
+    </script>
+
+        ';
 ?>

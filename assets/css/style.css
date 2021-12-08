@@ -106,6 +106,63 @@ body{
   color: var(--white-color);
   font-size: 90%;
 }
+.buttom-add{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  width: 90%;
+  margin-top: 0px;
+}
+.subButton{
+  display: flex;
+  flex-direction: row;
+  display: none;
+  margin-top: -65px;
+  align-items: flex-end;
+  width: 80%;
+  margin-left: 230px;
+}
+.buttom-add a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+.buttom-add a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+.btn-pdf{
+  background: var(--white-color);
+  color: var(--red-color); 
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  position: relative;
+  font-size: 40px;
+  font-style: normal;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-mail{
+  background: var(--white-color);
+  color: var(--red-color); 
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  justify-content: center;
+  position: relative;
+  font-size: 40px;
+   margin-top: 10px;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
 .btn{
   background: var(--red-color);
   color: var(--white-color); /*Couleur du text*/
@@ -117,10 +174,10 @@ body{
   font-size: 40px;
   font-style: normal;
   border: none;
-  margin-left: 75%;
-  margin-top: -35%;
+  margin-top: -10%;
   cursor: pointer;
 }
+
 
 .personal-info{
   margin-top: -10px;
@@ -257,7 +314,7 @@ body{
   justify-content: space-between;
   width: 63%;
   margin-left: 37%;
-  margin-top: -1629px;
+  margin-top: -1620px;
 }
 .experience{
   display: flex;
